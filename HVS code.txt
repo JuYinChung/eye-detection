@@ -1,0 +1,13 @@
+clear all
+clc
+I1 = imread('C:\Users\elena chung\Downloads\R2013a_win\bin\5.JPG');
+hv=rgb2hsv(I1); 
+H=hv(:,:,1);
+V=hv(:,:,2);
+S=hv(:,:,3);
+
+figure,
+imshow(hv);   hold on
+rectangle('Position',[70,332,70,21],'LineWidth',1,'LineStyle','-','EdgeColor','g');
+rectangle('Position',[790,381,68,40],'LineWidth',1,'LineStyle','-','EdgeColor','g');
+title('1');
